@@ -11,7 +11,7 @@ const animateCSS = (element, animation, delay, prefix = 'animate__') =>
       event.stopPropagation();
       node.classList.remove(`${prefix}animated`, animationName);
       if (delay != 0) {
-        setTimeout(() => { node.classList.add('invisible'); }, delay * 1000);
+        setTimeout(() => { node.classList.add('visible'); }, delay * 1000);
       }
 
       resolve('Animation ended');
